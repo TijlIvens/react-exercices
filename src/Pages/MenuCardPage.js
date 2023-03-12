@@ -7,7 +7,7 @@ export const MenuCardPage = ({ products }) => {
     <Box>
       <Typography variant="h2">Menu</Typography>
       {products.map((product) => (
-        <MenuProduct product={product} />
+        <MenuProduct key={product.name} product={product} />
       ))}
     </Box>
   );

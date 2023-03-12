@@ -7,7 +7,7 @@ export const PicturesPage = ({ pictures }) => {
     <Box>
       <Typography variant="h2">Pictures</Typography>
       {pictures.map((picture) => (
-        <Picture picture={picture} />
+        <Picture key={picture.id} picture={picture} />
       ))}
     </Box>
   );

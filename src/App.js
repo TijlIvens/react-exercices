@@ -1,25 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import { Box } from "@mui/system";
+import { PRODUCTS_DATA } from "./data/data";
+import { MenuCardPage } from "./Pages/MenuCardPage";
 
-function App() {
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box>
+      <MenuCardPage products={PRODUCTS_DATA} />
+    </Box>
   );
-}
-
-export default App;
+};
